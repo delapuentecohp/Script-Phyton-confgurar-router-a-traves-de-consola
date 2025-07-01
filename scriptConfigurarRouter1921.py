@@ -92,7 +92,7 @@ command = '\r\n' \
 #Convierte la variable command de string a binario.
 command = str.encode(command)
 
-#Envialos comando al router.
+#Envia los comando al router.
 ser.write(command)
 
 #Tiempo de espera.
