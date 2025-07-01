@@ -1,6 +1,6 @@
-#El siguiente Script realiza una configuracion inicial del Router 1921.
+#El siguiente Script realiza una configuracion inicial de un Router Cisco. La prueba se realizo con un router 1921.
 
-import serial #Si no tiene esta libreria instaladalo debe realizar con pip install pyserial para que reconozca el puerto COM
+import serial #Si no tiene esta librería instalada lo debe realizar con "pip install pyserial" para que reconozca el puerto COM
 
 import time
 
@@ -20,8 +20,8 @@ ser.isOpen()
 #Imprime el puerto COM.
 print(ser.name)
 
-#En este punto se ingresan a la variable command los comandos de configuracion de ios cisco
-#la expresion \r\n reemplaza el enter.
+#En este punto se ingresan a la variable command los comandos de configuracion de ios cisco.
+#La expresión \r reemplaza al apretar el enter y \n es el salto de linea.
 command = '\r\n' \
 'enable' \
 '\r\n' \
